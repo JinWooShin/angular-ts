@@ -1,0 +1,22 @@
+{
+  "name": "ts_test",
+  "version": "0.0.0",
+  "authors": [
+    "JinWooShin <jwshin@egi.utah.edu>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.3.8",
+    "jquery": "~2.1.3",
+    "bootstrap": "~3.3.1",
+    "angular-bootstrap": "~0.12.0",
+    "d3": "~3.5.3"
+  }
+}
