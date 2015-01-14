@@ -14,7 +14,7 @@ module Application.Controllers {
         scope: IIndexScope;
         constructor($scope:IIndexScope) {
             this.scope = $scope;
-            this.scope.title = "TEST";
+            this.scope.title = "Message from IndexCtrl";
         }
 
     }
