@@ -15,24 +15,27 @@ module Application.Controllers {
         closePanel(panel: IPanel):boolean;
     }
 
+    interface IPanelContainerScope extends ng.IScope {
+        panels: IPanel[];
+    }
+
     export class PanelContainerCtrl implements IPanelContainerCtrl{
         private PanelService:Application.Services.PanelService;
         private rootScope:ng.IRootScopeService;
-        private scope:ng.IScope;
+        private scope:IPanelContainerScope;
         private element:ng.IRootElementService;
         private log:ng.ILogService;
-        private panels:IPanel[];
 
-        constructor($rootScope:ng.IRootScopeService, $scope:ng.IScope, $element:JQuery, $log:ng.ILogService,
+        constructor($rootScope:ng.IRootScopeService, $scope:IPanelContainerScope, $element:JQuery, $log:ng.ILogService,
             PanelService:Application.Services.PanelService) {
             this.PanelService = PanelService;
             this.rootScope = $rootScope;
             this.scope = $scope;
             this.element = $element;
             this.log = $log;
-            this.panels = this.getPanels();
+            this.scope.panels = this.getPanels();
             this.scope.$on("panelChanged", function() {
-                this.panels = this.getPanels();
+                this.scope.panels = this.getPanels();
             })
         }
         public getPanels() {
