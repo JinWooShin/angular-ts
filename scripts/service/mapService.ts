@@ -5,6 +5,9 @@
 ///<reference path="esriService.ts" />
 
 import esri = require("esri");
+import ESRI = require("esriService");
+
+ESRI.getMap();
 
 module Application.Services {
     export interface IMapService {
@@ -15,6 +18,7 @@ module Application.Services {
         log:ng.ILogService;
         map;
         toolbar;
+
         constructor($log:ng.ILogService) {
             this.log = $log;
         }

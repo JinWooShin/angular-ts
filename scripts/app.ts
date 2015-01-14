@@ -6,5 +6,4 @@
 ///<reference path="service/resizeService.ts" />
 
 var appModule = angular.module("app",[]);
-
 appModule.service("ResizeService", [new Application.Services.ResizeService()]);

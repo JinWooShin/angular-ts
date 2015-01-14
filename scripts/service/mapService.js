@@ -3,7 +3,8 @@
  */
 ///<reference path="../../typings/tsd.d.ts" />
 ///<reference path="esriService.ts" />
-define(["require", "exports"], function (require, exports) {
+define(["require", "exports", "esriService"], function (require, exports, ESRI) {
+    ESRI.getMap();
     var Application;
     (function (Application) {
         var Services;
