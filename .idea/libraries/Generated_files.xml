@@ -4,12 +4,8 @@
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/scripts/service/resizeService.js" />
         <item url="file://$PROJECT_DIR$/scripts/app.js" />
-        <item url="file://$PROJECT_DIR$/scripts/service/esriService.js" />
         <item url="file://$PROJECT_DIR$/scripts/service/mapService.js" />
-        <item url="file://$PROJECT_DIR$/scripts/service/resizeService.js" />
-        <item url="file://$PROJECT_DIR$/scripts/app.js" />
         <item url="file://$PROJECT_DIR$/scripts/service/esriService.js" />
-        <item url="file://$PROJECT_DIR$/scripts/service/mapService.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
@@ -19,12 +15,8 @@
       <root url="file://$PROJECT_DIR$/scripts/service/test1.js" />
       <root url="file://$PROJECT_DIR$/scripts/service/resizeService.js" />
       <root url="file://$PROJECT_DIR$/scripts/app.js" />
-      <root url="file://$PROJECT_DIR$/scripts/service/esriService.js" />
       <root url="file://$PROJECT_DIR$/scripts/service/mapService.js" />
-      <root url="file://$PROJECT_DIR$/scripts/service/resizeService.js" />
-      <root url="file://$PROJECT_DIR$/scripts/app.js" />
       <root url="file://$PROJECT_DIR$/scripts/service/esriService.js" />
-      <root url="file://$PROJECT_DIR$/scripts/service/mapService.js" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
