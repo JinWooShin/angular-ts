@@ -9,9 +9,12 @@ var appModule = angular.module("app",[]);
 new Application.ScriptLoader().load( function() {
 
     appModule
-        .service("ResizeService", [new Application.Services.ResizeService()])
-        .service("PanelService", ["$rootScope", "$log", ($rootScope, $log) => new Application.Services.PanelService($rootScope, $log)])
-        .controller("IndexCtrl", ["$scope", ($scope)=>new Application.Controllers.IndexCtrl($scope)])
+        .service("ResizeService", [
+            new Application.Services.ResizeService()])
+        .service("PanelService", ["$rootScope", "$log", ($rootScope, $log) =>
+            new Application.Services.PanelService($rootScope, $log)])
+        .controller("IndexCtrl", ["$scope", ($scope)=>
+            new Application.Controllers.IndexCtrl($scope)])
         .controller("PanelContainerCtrl",
                 ["$rootScope", "$scope", "$element", "$log", "ResizeService", ($rootScope, $scope, $element, $log, ResizeService) =>
                 new Application.Controllers.PanelContainerCtrl($rootScope, $scope, $element, $log, ResizeService)]);
