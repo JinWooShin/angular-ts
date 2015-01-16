@@ -27,7 +27,6 @@ module Application.Services {
                 }
             });
         }
-
         public resizePanelContainer() {
             var layoutContainer=$(document.querySelector(".layoutContainer"));
             var panels=$(document.querySelectorAll(".layoutPanel"));

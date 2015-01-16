@@ -9,3 +9,7 @@
 
 ///<reference path="controller/indexCtrl.ts" />
 ///<reference path="controller/panelContainerCtrl.ts"/>
+///<reference path="controller/toolbarCtrl.ts"/>
+
+///<reference path="directive/toolbarDrtv.ts"/>
+///<reference path="directive/panelContainerDrtv.ts" />

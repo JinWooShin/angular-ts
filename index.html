@@ -6,15 +6,15 @@
 
     <meta charset="UTF-8">
     <title></title>
-
+    <!--<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>-->
     <script src="bower_components/angular/angular.js"></script>
+    <!--<script src="bower_components/angular-bind-polymer/angular_bind_polymer.js"></script>-->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="http://js.arcgis.com/3.12/"></script>
 
     <script>
         var pathRx = new RegExp(/\/[^\/]+$/);
         var locationPath = location.href.replace(pathRx,"")+"/";
-
         require({
             async:true,
             alias: [['text', 'dojo/text']],
@@ -28,6 +28,9 @@
                 }, {
                     name: "scripts",
                     location: locationPath+"scripts"
+                }, {
+                    name: "template",
+                    location: locationPath+"scripts/template"
                 }
             ]
         });
@@ -35,16 +38,22 @@
     
     <script src="scripts/scriptLoader.js"></script>
     <script src="scripts/app.js"></script>
-
-
-    <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
-    <!--<link rel="import" href="elements/toolbar-element.html">-->
+    <!--<link rel="import" href="elements/test-element.html">-->
 
 </head>
 <body>
     <div ng-controller="IndexCtrl">
-        {{title}}
-    </div>
+        <!--from Angular control:<br>-->
+        <!--<input type="text" ng-model="message">-->
+        <!--<br>-->
+        <!--from Polymer Attribute:<br>-->
+        <!--<test-element bind-polymer message={{message}} panels={{panels}}></test-element>-->
+    <!--</div>-->
     <!--<toolbar-element></toolbar-element>-->
+        {{vm.showMessage()}}
+        <div class="layoutContainer">
+            <toolbar></toolbar>
+            <panel-container ng-show="getPanels().length>0"></panel-container>
+        </div>
 </body>
 </html>

@@ -1,10 +1,31 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-
-</body>
-</html>
+<div class="panelContainer panel panel-default horizontal">
+    <div ng-repeat="panel in panels" class="layoutPanel panel panel-default horizontal" ng-class="{'minimize':panel.collapse===true}"
+         ng-click="toggleCollapse(panel, false, event)">
+        <div class="panel-heading">
+            <div class="panel-title">
+                <span>{{panel.content.title}}</span>
+                <span class="panelControl">
+                    <span class="btn btn-group pull-right">
+                        <a href="#">
+                            <i class="panelHeadButton" ng-class="{'fa fa-angle-double-right':panel.collapse===true, 'fa fa-angle-double-left':panel.collapse===false}"
+                               data-toggle="collapse" data-target=".panel-body.layoutPanel" ng-click="toggleCollapse(panel, true, $event)"></i>
+                        </a>
+                        <a href="#">
+                            <i class="panelHeadButton fa fa-save" ng-click="savePanel(panel)"></i>
+                        </a>
+                        <a href="#">
+                            <i class="panelHeadButton" ng-class="{'fa fa-lock':panel.lock, 'fa fa-unlock':panel.lock===false}"
+                               ng-click="toggleLock(panel)"></i>
+                        </a>
+                        <a href="#">
+                            <i class="panelHeadButton fa fa-times" ng-class="{inactive:panel.lock}" ng-click="closePanel(panel)"></i>
+                        </a>
+                    </span>
+                </span>
+            </div>
+        </div>
+        <duv class="panel-body" ng-class="{'collapse':panel.collapse===true}">
+            <div ng-include="panel.templateUrl"></div>
+        </duv>
+    </div>
+</div>

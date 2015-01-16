@@ -5,10 +5,14 @@
         <item url="file://$PROJECT_DIR$/scripts/service/panelService.js" />
         <item url="file://$PROJECT_DIR$/scripts/service/resizeService.js" />
         <item url="file://$PROJECT_DIR$/scripts/_app.js" />
+        <item url="file://$PROJECT_DIR$/scripts/controller/toolbarCtrl.js" />
         <item url="file://$PROJECT_DIR$/scripts/app.js" />
         <item url="file://$PROJECT_DIR$/scripts/controller/panelContainerCtrl.js" />
+        <item url="file://$PROJECT_DIR$/scripts/directive/panelContainerDrtv.js" />
         <item url="file://$PROJECT_DIR$/scripts/controller/indexCtrl.js" />
         <item url="file://$PROJECT_DIR$/scripts/scriptLoader.js" />
+        <item url="file://$PROJECT_DIR$/scripts/scriptLoader.js" />
+        <item url="file://$PROJECT_DIR$/scripts/directive/toolbarDrtv.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
@@ -23,10 +27,14 @@
       <root url="file://$PROJECT_DIR$/scripts/service/panelService.js" />
       <root url="file://$PROJECT_DIR$/scripts/service/resizeService.js" />
       <root url="file://$PROJECT_DIR$/scripts/_app.js" />
+      <root url="file://$PROJECT_DIR$/scripts/controller/toolbarCtrl.js" />
       <root url="file://$PROJECT_DIR$/scripts/app.js" />
       <root url="file://$PROJECT_DIR$/scripts/controller/panelContainerCtrl.js" />
+      <root url="file://$PROJECT_DIR$/scripts/directive/panelContainerDrtv.js" />
       <root url="file://$PROJECT_DIR$/scripts/controller/indexCtrl.js" />
       <root url="file://$PROJECT_DIR$/scripts/scriptLoader.js" />
+      <root url="file://$PROJECT_DIR$/scripts/scriptLoader.js" />
+      <root url="file://$PROJECT_DIR$/scripts/directive/toolbarDrtv.js" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

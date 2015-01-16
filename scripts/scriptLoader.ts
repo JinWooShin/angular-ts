@@ -9,8 +9,13 @@ var scriptFiles = [
     "service/resizeService",
 
     "controller/indexCtrl",
-    "controller/panelContainerCtrl"
+    "controller/panelContainerCtrl",
+    "controller/toolbarCtrl",
+
+    "directive/panelContainerDrtv",
+    "directive/toolbarDrtv"
 ];
+
 module Application {
     export class ScriptLoader {
         private scripts = scriptFiles;
