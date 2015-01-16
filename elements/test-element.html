@@ -1,10 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-
-</body>
-</html>
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<polymer-element name="test-element" attributes="message panels">
+    <template>
+        <input type="text" value="{{message}}"/>
+        <template repeat="{{panel in panels}}">
+            {{panel.title}}
+        </template>
+    </template>
+    <script>
+        Polymer({
+//            created: function(){
+//              this.panels = [{title:"Panel 1"},{title:"Panels 2"}];
+//            },
+            ready: function() {
+                this.panels = panels;
+            },
+            publish: {
+                message:{value:"=", reflect:true},
+                panels: {value:"=", reflect:true}
+            }
+        });
+    </script>
+</polymer-element>
